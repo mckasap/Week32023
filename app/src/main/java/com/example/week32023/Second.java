@@ -16,7 +16,7 @@ public class Second extends AppCompatActivity {
     String ad=getIntent().getStringExtra("Ad");
     tv.setText(ad);
         MyContainer mc=(MyContainer) getIntent().getSerializableExtra("mc");
-        ad+= "\n"+ mc.getAd() +"\n"+mc.getSoyad() +"\n"+ mc.getDob().toString();
+        ad+= "\n"+ mc.getAd() +"\n"+mc.getSoyad() +"\n"+ mc.getDob().getTime() ;
         tv.setText(ad);
 
     }

@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import java.sql.Date;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         myInt.putExtra("Ad","KARAMURAT");
 
-        MyContainer mc= new MyContainer("MC","Hammer", new Date(1976,05,21));
+        MyContainer mc= new MyContainer("MC", "Hammer", new GregorianCalendar(1976,04,21));
+
 
         myInt.putExtra("mc",mc);
         startActivity(myInt);
